@@ -1,0 +1,65 @@
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #bababa;
+    font-family: roboto;
+}
+
+#card {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#card:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+#card img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.name {
+    margin-top: 6px;
+}
+
+button {
+   margin: 20px 30px; 
+   padding: 10px 20px;
+   border-radius: 20px;
+   background-color: yellowgreen;
+   color: black;
+}
+
+button:hover {
+    background-color: yellow;
+    scale: 1.1;
+    transition: all 0.2s;
+}
