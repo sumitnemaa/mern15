@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: wild;
+    src: url(./This\ Night.ttf);
+}
+
+.bg{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card1, .card2, .card3{
+    height: 320px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card1{
+    height: 320px;
+    width: 250px;
+    background: url(https://i.pinimg.com/736x/a5/78/03/a57803e6f37f73382bf89b007a4b5954.jpg) center/cover no-repeat;
+}
+
+.card2{
+    height: 320px;
+    width: 250px;
+    background: url(https://i.pinimg.com/1200x/6b/c6/8d/6bc68dec75be6ea7d8c80d69015408b2.jpg) center/cover no-repeat;
+}
+
+.card3{
+    height: 320px;
+    width: 250px;
+    background: url(https://i.pinimg.com/736x/34/a3/de/34a3dea4caa312cd51c003c2431d88e3.jpg) center/cover no-repeat;
+}
+
+
+.card1:hover, .card2:hover, .card3:hover{
+    scale: 0.8;
+    transition: all 0.5s;
+}
+
+h1{
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: wild;
+}
