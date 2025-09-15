@@ -1,0 +1,248 @@
+// ✅(Task 1).  Ask the user for a number and print all numbers down to 1 in descending order. If the number is negative, print "Invalid input".
+
+// var a = Number(prompt('Enter a Number'));
+// if(a<0){
+//     console.log('Invalid Input');
+// }
+// else{
+//     for(; a>=1; a--){
+//         console.log(a);
+//     }
+// }
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 2). Ask the user for a number. If it's even, print all even numbers up to that number. If it's odd, display "Bye" once and exit.
+
+// var a = Number(prompt("Enter a Number"));
+// if(a%2 !== 0){
+//     console.log("Bye");
+// }
+// else{
+//     for(var b = 0;b <= a; b++){
+//         if(b%2 == 0){
+//             console.log(b);
+//         }
+//     }
+// }
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 3). Ask the user for an email and password. If they enter "admin@mail.com" and "1234", show a success message. Otherwise, allow up to 3 attempts before showing "Access Denied".
+
+// var correctEmail = "admin@mail.com";
+// var correctPassword = "1234";
+
+// var attempt = 3;
+
+// while(attempt > 0){
+//     var email = prompt("Enter your Email");
+//     var password = prompt("Enter your Password");
+
+//     if(email === correctEmail && password === correctPassword){
+//         console.log('Succesfully enter correct details');
+//         break;
+//     }
+//     else{
+//         attempt--
+//         if(attempt>0){
+//             console.log(`Wrong! You have ${attempt} left`);
+//         }
+//         else{
+//             console.log(`Access Denied`);
+//         }
+//     }
+// }
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 4).Ask the user for a number and print numbers up to that number. If a number is a multiple of 3, print "Sheryians", if a multiple of 5, print "Coding", and if both, print "Sheryians Coding School".
+
+// var num = Number(prompt("Enter a Number"));
+// var i = 0;
+
+// for(var i = 1; i<=num; i++){
+//     if(i%3 == 0 && i%5 ==0){
+//         console.log("Sheryians Coding School");
+//     }
+//     else if(i%3 == 0){
+//         console.log("Sheryians");
+//     }
+//     else if(i%5 == 0){
+//         console.log("Coding");
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 5). Ask the user for a number and print all prime numbers up to that number.
+
+// var num = Number(prompt("Enter a Number"));
+// var count=0;
+// let i=1;
+// while(i<=num){
+//     if(num%i==0){
+//         count++;
+//     }
+//     i++;
+// }
+// if(count==2){
+//     console.log(`${num} is Prime Number`);
+// }else{
+//      console.log(`${num} is not Prime Number`);
+// }
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 6). Ask the user for a string and print it in reverse (e.g., "hello" → "olleh").
+
+// var str = prompt('Enter a String');
+
+// var reverse = str.split("").reverse().join("");
+
+// console.log(reverse);
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 7). Ask the user for a word and check if it is a palindrome (reads the same forward and backward).
+
+// var word = prompt();
+
+// var reverse = word.split("").reverse().join("");
+
+// if(reverse === word){
+//     console.log(`${word} is Palindrome`);
+// }
+// else{
+//     console.log(`${word} is not Palindrome`);
+// }
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 8). Ask the user for a number and print the sum of its digits (e.g., 456 → 4+5+6 = 15).
+
+                        // 👉1️⃣nd Solution>= And z👆1st way to to solve this Question.
+
+// var num = Number(prompt("Enter a Number"));
+// var sum = 0; //2
+// var copy =num
+// // 12 
+// while(num != 0){
+//     sum += num%10;  // If num = 12 than sum = 0 + 2 = 2
+//     num = Math.floor(num/10)  // If num = 12 than num = Math.floor(12/10) = Math.floor(1.2) = 1
+// }
+// console.log(`The sum of digits of ${copy} is ${sum}`);
+
+                        // 👉2️nd Solution>= And✌️2nd way to to solve this Question.
+
+// var num = Number(prompt("Enter a Number"));
+
+// var str = num.toString();
+// var add = str.split("");
+
+// console.log(add);
+
+// var sum = 0;
+
+// for(let i = 0; i< add.length; i++){
+//     sum = sum + Number(add[i])
+// }
+
+// console.log(sum);
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 9).Ask the user for a number and print its factorial (e.g., 5! = 5×4×3×2×1 = 120).
+
+// var num = Number(prompt("Enter a Number"));
+
+// var str = num.toString();
+// var add = str.split("")
+
+// console.log(add);
+
+// var sum = 1;
+
+// for(let i = 0; i< add.length; i++){
+//     sum = sum * Number(add[i])
+// }
+
+// console.log(sum);
+
+// .
+// .
+// .
+// .
+// .
+
+// ✅(Task 10).Ask the user for a sentence and count how many vowels (a, e, i, o, u) are present.
+
+// var sen = prompt("Enter a Sentence");
+// var countA = 0;
+// var countE = 0;
+// var countI = 0;
+// var countO = 0;
+// var countU = 0;
+
+// for (let i = 0; i < sen.length; i++) {
+// /*  if (Number(sen[i])) {
+//     console.log("Number-included");
+//   }
+//   if (Number(sen[i]) && sen[i]) {
+//     console.log("Numbers & String Both included");
+//   }  */
+//   if (sen[i].toUpperCase().includes("A")) {
+//     countA++;
+//   }
+//   if (sen[i].toUpperCase().includes("E")) {
+//     countE++;
+//   }
+//   if (sen[i].toUpperCase().includes("I")) {
+//     countI++;
+//   }
+//   if (sen[i].toUpperCase().includes("O")) {
+//     countO++;
+//   }
+//   if (sen[i].toUpperCase().includes("U")) {
+//     countU++;
+//   }
+// }
+
+// let val = countA + countI + countO + countU + countE;
+
+// console.log(val);
